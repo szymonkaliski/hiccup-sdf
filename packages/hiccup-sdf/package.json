@@ -1,0 +1,12 @@
+{
+  "name": "hiccup-sdf",
+  "version": "0.0.1",
+  "description": "hiccup-like syntax for generating SDFs on CPU and GPU",
+  "main": "index.js",
+  "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@thi.ng/vectors": "^0.2.0",
+    "lodash": "^4.17.10"
+  }
+}

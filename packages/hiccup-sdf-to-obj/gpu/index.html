@@ -1,0 +1,26 @@
+<script>
+  const NodeConsole = require("console").Console;
+  const { ipcRenderer } = require("electron");
+  const implicitMesh = require("../../display-sdf/implicit-mesh");
+
+  console = new NodeConsole(process.stdout, process.stderr);
+
+  ipcRenderer.on("shader", (_, { shader, uniforms, options }) => {
+    const makeUniforms = regl =>
+      Object.keys(uniforms).reduce(
+        (memo, key) =>
+          Object.assign({}, memo, {
+            [key]: regl.texture({
+              data: uniforms[key],
+              type: "float"
+            })
+          }),
+        {}
+      );
+
+
+    const mesh = implicitMesh(options.size, shader, makeUniforms);
+
+    ipcRenderer.send("mesh", mesh);
+  });
+</script>

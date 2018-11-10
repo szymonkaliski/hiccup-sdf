@@ -1,0 +1,17 @@
+{
+  "name": "display-sdf",
+  "version": "0.0.1",
+  "description": "simple fullscreen SDF shader visualizer",
+  "main": "index.js",
+  "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
+  "license": "MIT",
+  "dependencies": {
+    "angle-normals": "^1.0.0",
+    "ndarray": "^1.0.18",
+    "persistent-memo": "^0.0.1",
+    "refine-mesh": "^1.0.1",
+    "regl": "^1.3.7",
+    "regl-camera": "^2.1.1",
+    "surface-nets": "^1.0.2"
+  }
+}
