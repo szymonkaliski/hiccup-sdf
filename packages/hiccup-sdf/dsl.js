@@ -114,7 +114,7 @@ const SHAPE = {
     [GLSL]: {
       generate: props => p =>
         `sdTriangle(${p}, ${GL.f(props.r)}, ${GL.f(props.h)})`,
-      inject: () => GLSL.SD_TRIANGLE
+      inject: () => GLSL_STL.SD_TRIANGLE
     }
   },
 
