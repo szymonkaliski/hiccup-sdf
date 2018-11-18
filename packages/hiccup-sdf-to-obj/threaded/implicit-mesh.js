@@ -33,6 +33,8 @@ module.exports = (tree, { size = 64, threads = 4 }, callback) => {
   const allDone = () => doneStatus.every(done => done);
 
   range(threads).map(i => {
+    console.time(`worker[${i}]`);
+
     const worker = new Worker(path.join(__dirname, "worker.js"), {
       workerData: {
         id: i,
@@ -46,6 +48,10 @@ module.exports = (tree, { size = 64, threads = 4 }, callback) => {
     });
 
     worker.on("message", msg => {
+      console.timeEnd(`worker[${i}]`);
+
+      worker.unref();
+
       doneStatus[i] = true;
 
       const { xs } = msg;

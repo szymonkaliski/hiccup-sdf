@@ -30,9 +30,9 @@ const tree = [
   }
 ];
 
-console.time("sdf-to-obj");
-
+console.time("hiccup-sdf-to-obj");
 sdfToObj(tree, { size: 128 }, objStr => {
+  console.timeEnd("hiccup-sdf-to-obj");
+
   fs.writeFileSync(path.join(__dirname, "map.obj"), objStr);
-  console.timeEnd("sdf-to-obj");
 });

@@ -9,8 +9,6 @@ let data = [];
 
 const sdfFunction = dsl.compileFunction(tree);
 
-console.time(`worker[${id}]`);
-
 let x = 0;
 for (let i = xs[0]; i < xs[1]; i++) {
   if (!data[x]) {
@@ -38,8 +36,6 @@ for (let i = xs[0]; i < xs[1]; i++) {
 
   x++;
 }
-
-console.timeEnd(`worker[${id}]`);
 
 parentPort.postMessage({ data, xs, id });
 parentPort.unref();

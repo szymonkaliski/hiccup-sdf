@@ -1,18 +1,13 @@
 {
-  "name": "example-basic",
+  "name": "exammple-obj",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "start": "sketchbook-cli ../example-basic/ --port 3000"
-  },
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
   "license": "MIT",
   "dependencies": {
     "display-sdf": "^0.0.1",
     "hiccup-sdf": "^0.0.1",
+    "hiccup-sdf-to-obj": "^0.0.1",
     "simplex-noise": "^2.4.0"
-  },
-  "devDependencies": {
-    "sketchbook-cli": "^1.3.0"
   }
 }

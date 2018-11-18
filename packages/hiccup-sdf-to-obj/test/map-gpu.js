@@ -34,9 +34,9 @@ const tree = [
   }
 ];
 
-console.time("sdf-to-obj");
-
+console.time("hiccup-sdf-to-obj");
 sdfToObj(tree, { size: 256 }, objStr => {
+  console.timeEnd("hiccup-sdf-to-obj");
+
   fs.writeFileSync(path.join(__dirname, "map-gpu.obj"), objStr);
-  console.timeEnd("sdf-to-obj");
 });
