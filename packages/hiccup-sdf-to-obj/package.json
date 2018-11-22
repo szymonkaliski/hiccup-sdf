@@ -1,6 +1,6 @@
 {
   "name": "hiccup-sdf-to-obj",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "export hiccup-sdf models to OBJ",
   "main": "index.js",
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
