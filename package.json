@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish"
+    "publish": "lerna exec 'npm publish --access public'"
   },
   "dependencies": {
     "lerna": "^3.4.3"
