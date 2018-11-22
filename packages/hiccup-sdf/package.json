@@ -1,6 +1,6 @@
 {
   "name": "hiccup-sdf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hiccup-like syntax for generating SDFs on CPU and GPU",
   "main": "index.js",
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
