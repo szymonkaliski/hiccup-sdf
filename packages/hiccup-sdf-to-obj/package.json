@@ -13,5 +13,6 @@
     "node-ipc": "^9.1.1",
     "serialize-wavefront-obj": "^1.0.0",
     "surface-nets": "^1.0.2"
-  }
+  },
+  "gitHead": "23c3580ef43952d05dd5458855213151398ec1a6"
 }

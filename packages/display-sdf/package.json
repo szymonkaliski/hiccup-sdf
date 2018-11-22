@@ -13,5 +13,6 @@
     "regl": "^1.3.7",
     "regl-camera": "^2.1.1",
     "surface-nets": "^1.0.2"
-  }
+  },
+  "gitHead": "23c3580ef43952d05dd5458855213151398ec1a6"
 }

@@ -8,5 +8,6 @@
   "dependencies": {
     "@thi.ng/vectors": "^0.2.0",
     "lodash": "^4.17.10"
-  }
+  },
+  "gitHead": "23c3580ef43952d05dd5458855213151398ec1a6"
 }
