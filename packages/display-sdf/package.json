@@ -1,5 +1,5 @@
 {
-  "name": "display-sdf",
+  "name": "@hiccup-sdf/display-sdf",
   "version": "0.0.3",
   "description": "simple fullscreen SDF shader visualizer",
   "main": "index.js",
@@ -14,5 +14,5 @@
     "regl-camera": "^2.1.1",
     "surface-nets": "^1.0.2"
   },
-  "gitHead": "23c3580ef43952d05dd5458855213151398ec1a6"
+  "gitHead": "d299655dc7efe38ab265b35a1fdbe620ace65077"
 }
