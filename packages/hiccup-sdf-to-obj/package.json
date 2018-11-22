@@ -1,13 +1,13 @@
 {
   "name": "hiccup-sdf-to-obj",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "export hiccup-sdf models to OBJ",
   "main": "index.js",
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
   "license": "MIT",
   "dependencies": {
     "electron": "^2.0.8",
-    "hiccup-sdf": "^0.0.2",
+    "hiccup-sdf": "^0.0.3",
     "implicit-mesh": "^1.1.1",
     "ndarray": "^1.0.18",
     "node-ipc": "^9.1.1",

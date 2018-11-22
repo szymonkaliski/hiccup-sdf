@@ -1,6 +1,6 @@
 {
   "name": "display-sdf",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple fullscreen SDF shader visualizer",
   "main": "index.js",
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
