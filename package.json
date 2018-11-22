@@ -1,14 +1,9 @@
 {
-  "name": "hiccup-sdf",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "publish": "lerna publish"
   },
-  "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
-  "license": "MIT",
   "dependencies": {
     "lerna": "^3.4.3"
   }
