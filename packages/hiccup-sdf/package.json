@@ -1,5 +1,5 @@
 {
-  "name": "@hiccup-sdf/hiccup-sdf",
+  "name": "hiccup-sdf",
   "version": "0.0.6",
   "description": "hiccup-like syntax for generating SDFs on CPU and GPU",
   "main": "index.js",
@@ -8,9 +8,6 @@
   "dependencies": {
     "@thi.ng/vectors": "^0.2.0",
     "lodash": "^4.17.10"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "gitHead": "bad886b7192ffb1e7ec623d5a3c072396aacedf0"
 }

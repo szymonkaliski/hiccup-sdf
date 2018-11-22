@@ -1,5 +1,5 @@
 {
-  "name": "@hiccup-sdf/hiccup-sdf-to-obj",
+  "name": "hiccup-sdf-to-obj",
   "version": "0.0.6",
   "description": "export hiccup-sdf models to OBJ",
   "main": "index.js",
@@ -13,9 +13,6 @@
     "node-ipc": "^9.1.1",
     "serialize-wavefront-obj": "^1.0.0",
     "surface-nets": "^1.0.2"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "gitHead": "bad886b7192ffb1e7ec623d5a3c072396aacedf0"
 }
