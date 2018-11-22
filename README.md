@@ -15,8 +15,8 @@ Provides multiple primitives, basic operations, and custom `map` function for wo
 
 ## Examples
 
-- [`example-basic`](./packages/example-basic) - example usage of `hiccup-sdf` and `display-sdf`
-- [`example-obj`](./packages/example-obj) - examples of exporting `hiccup-sdf` models to OBJs
+- [`basic`](./examples/basic) - example usage of `hiccup-sdf` and `display-sdf`
+- [`obj-export`](./examples/obj-export) - examples of exporting `hiccup-sdf` models to OBJs
 
 ## Future Work
 
