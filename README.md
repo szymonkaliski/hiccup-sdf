@@ -3,7 +3,9 @@
 Monorepository holding tools for modeling with signed distance functions using hiccup-like language, works both on CPU and GPU.
 Provides multiple primitives, basic operations, and custom `map` function for working over large amounts of data efficiently.
 
-Each project provides README with more details.
+<p align="center">
+  <img src="assets/sdf.png" />
+</p>
 
 ## Projects
 
