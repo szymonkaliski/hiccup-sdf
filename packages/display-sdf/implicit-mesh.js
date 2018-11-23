@@ -1,3 +1,5 @@
+// adapted from https://github.com/substack/implicit-mesh
+
 const createRegl = require("regl");
 const ndarray = require("ndarray");
 const surfaceNets = require("surface-nets");

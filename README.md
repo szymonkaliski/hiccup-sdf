@@ -9,6 +9,8 @@ Provides multiple primitives, basic operations, and custom `map` function for wo
 
 ## Projects
 
+Each project contains detailed README file.
+
 - [`hiccup-sdf`](./packages/hiccup-sdf) - main library
 - [`display-sdf`](./packages/display-sdf) - utility for displaying SDFs
 - [`hiccup-sdf-to-obj`](./packages/hiccup-sdf-to-obj) - utility for exporting `hiccup-sdf` models to OBJs
