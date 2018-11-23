@@ -8,8 +8,8 @@
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com)",
   "license": "MIT",
   "dependencies": {
-    "display-sdf": "^0.0.1",
-    "hiccup-sdf": "^0.0.1",
+    "display-sdf": "latest",
+    "hiccup-sdf": "latest",
     "simplex-noise": "^2.4.0"
   },
   "devDependencies": {
