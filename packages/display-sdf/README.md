@@ -46,16 +46,16 @@ const { displayRaw } = require("display-sdf");
 displayMesh(shader, { size: 128 });
 ```
 
-## Usage
+## API
 
 All options are optional.
 
-### `displayRaw(shaderCode, options)`
+### `displayRaw(shaderCode, [options])`
 
 - `shaderCode` - stringified SDF GLSL code
 - `options.textures` - custom data textures to pass to the shader, used by `hiccup-sdf` `map` function to work over large amounts of data
 
-### `displayMesh(shaderCode, options)`
+### `displayMesh(shaderCode, [options])`
 
 - `shaderCode` - stringified SDF GLSL code
 - `options.size` - size of the surface-nets field (uniform box, so `128` becomes `[128, 128, 128]`)
