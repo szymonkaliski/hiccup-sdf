@@ -123,6 +123,11 @@ float opDifferenceRound(float a, float b, float r) {
   return min(-r, max(a, -b)) + length(u);
 }`;
 
+const OP_BLEND = `
+float opBlend(float a, float b, float k) {
+  return (1.0 - k) * a + k * b;
+}`;
+
 module.exports = {
   SD_SPHERE,
   SD_BOX,
@@ -140,5 +145,6 @@ module.exports = {
   OP_INTERSECTION,
   OP_INTERSECTION_ROUND,
   OP_DIFFERENCE,
-  OP_DIFFERENCE_ROUND
+  OP_DIFFERENCE_ROUND,
+  OP_BLEND
 };

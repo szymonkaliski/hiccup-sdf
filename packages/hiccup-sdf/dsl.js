@@ -434,6 +434,26 @@ const OP = {
     }
   },
 
+  blend: {
+    defaultProps: {
+      k: 0.5
+    },
+    [CPU]: {
+      generate: (props, children) => {
+        const blend = (a, b) => (1.0 - props.k) * a + props.k * b;
+        return reduceChildrenCPU(children, { reducer: blend });
+      }
+    },
+    [GLSL]: {
+      generate: (props, children) =>
+        reduceChildrenGLSL(children, {
+          reducer: (a, b) => `opBlend(${a}, ${b}, ${GL.f(props.k)})`
+        }),
+
+      inject: () => GLSL_STL.OP_BLEND
+    }
+  },
+
   map: {
     defaultProps: {
       reduce: ["union", { r: 0.0 }]
@@ -538,8 +558,8 @@ const OP = {
           childInject,
           `
 ${Object.keys(props.data)
-            .map(key => `uniform sampler2D ${key}${props.key}Tex;`)
-            .join("\n")}
+  .map(key => `uniform sampler2D ${key}${props.key}Tex;`)
+  .join("\n")}
 
 float map${props.key}(vec3 p) {
   float value = 0.0;
@@ -556,10 +576,8 @@ float map${props.key}(vec3 p) {
       );
 
 ${Object.keys(props.data)
-            .map(
-              key => `      vec4 ${key} = texture2D(${key}${props.key}Tex, uv);`
-            )
-            .join("\n")}
+  .map(key => `      vec4 ${key} = texture2D(${key}${props.key}Tex, uv);`)
+  .join("\n")}
 
       if (i == 0 && j == 0) {
         value = ${childModel("p")};
