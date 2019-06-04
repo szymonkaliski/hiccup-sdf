@@ -52,7 +52,8 @@ displayRaw(shader);
 - `["repeatPolar", { r: float }, [subtree]]`
 - `["union", { r: float }, [subtree]]`
 - `["intersection", { r: float }, [subtree]]`
-- `["differnce", { r: float }, [subtree]]`
+- `["difference", { r: float }, [subtree]]`
+- `["blend", { k: float }, [subtree]]`
 
 ### `Map`
 

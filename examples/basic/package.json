@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "display-sdf": "latest",
-    "hiccup-sdf": "latest",
+    "hiccup-sdf": "0.0.9",
     "simplex-noise": "^2.4.0"
   },
   "devDependencies": {
