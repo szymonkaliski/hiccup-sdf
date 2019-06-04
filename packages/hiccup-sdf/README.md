@@ -48,6 +48,7 @@ displayRaw(shader);
 - `["scale", { s: float }, [subtree]]`
 - `["rotate", { r: [float, float, float] }, [subtree]]`
 - `["mirror", { m: [float, float, float] }, [subtree]]`
+- `["elongate", { s: [float, float, float] }, [subtree]]`
 - `["repeat", { r: [float, float, float] }, [subtree]]`
 - `["repeatPolar", { r: float }, [subtree]]`
 - `["union", { r: float }, [subtree]]`

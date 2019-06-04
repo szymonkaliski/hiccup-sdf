@@ -9,9 +9,9 @@ const steps = range(10).map(i => {
     { t: [i / 10 - 0.5, 0, 0] },
     [
       [
-        "blend",
-        { k: i / 10 },
-        [["torus", { r1: 0.01, r2: 0.03 }], ["box", { s: [0.03, 0.03, 0.03] }]]
+        "elongate",
+        { s: [0.0, (i / 10) * 0.5, 0.0] },
+        [["torus", { r1: 0.001, r2: 0.03 }]]
       ]
     ]
   ];
@@ -19,8 +19,8 @@ const steps = range(10).map(i => {
 
 const tree = [
   "scale",
-  { s: 2.0 },
-  [["rotate", { r: [0.1, 0.25, 0.5] }, [["union", steps]]]]
+  { s: 1.5 },
+  [["rotate", { r: [0.1, 0, -0.25] }, [["union", steps]]]]
 ];
 
 const { inject, model } = compileShader(tree);

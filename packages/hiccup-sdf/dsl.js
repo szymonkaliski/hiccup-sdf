@@ -265,6 +265,25 @@ const OP = {
     }
   },
 
+  elongate: {
+    defaultProps: {
+      s: [0.1, 0.1, 0.1]
+    },
+    [CPU]: {
+      generate: () =>
+        reduceChildrenCPU(children, {
+          process: p => v.max3(v.sub3(v.abs3(p), props.s), [0, 0, 0])
+        })
+    },
+    [GLSL]: {
+      generate: (props, children) =>
+        reduceChildrenGLSL(children, {
+          process: p => `opElongate(${p}, ${GL.vec3(props.s)})`
+        }),
+      inject: () => GLSL_STL.OP_ELONGATE
+    }
+  },
+
   mirror: {
     defaultProps: {
       m: [0.5, 0.0, 0]

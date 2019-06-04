@@ -128,6 +128,12 @@ float opBlend(float a, float b, float k) {
   return (1.0 - k) * a + k * b;
 }`;
 
+const OP_ELONGATE = `
+vec3 opElongate(vec3 p, vec3 s) {
+  vec3 q = abs(p) - s;
+  return vec3(max(q, 0.0));
+}`;
+
 module.exports = {
   SD_SPHERE,
   SD_BOX,
@@ -146,5 +152,6 @@ module.exports = {
   OP_INTERSECTION_ROUND,
   OP_DIFFERENCE,
   OP_DIFFERENCE_ROUND,
-  OP_BLEND
+  OP_BLEND,
+  OP_ELONGATE
 };
