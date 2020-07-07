@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "display-sdf": "^0.0.9",
-    "electron": "^2.0.8",
+    "electron": "^7.2.4",
     "hiccup-sdf": "^0.0.10",
     "implicit-mesh": "^1.1.1",
     "ndarray": "^1.0.18",
